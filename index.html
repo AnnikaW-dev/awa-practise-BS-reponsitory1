@@ -38,23 +38,27 @@
       <!-- section with hero image -->
       <section class="row">
           <!-- text-center class used to centre all text inside column -->
-          <div class="col-12 text-center">
-              <h1 class="display-4 my-4">Mei Wong</h1>
-              <!-- mb-5 gives extra margin spacing under subheading -->
-              <h2 class="display-6 mb-5">Software Developer</h2>
-              <p>
-                  Hello! I'm Mei, a
-                  <strong>passionate and creative Software Developer</strong>
-                  dedicated to building engaging, user-friendly websites and
-                  applications. With a keen eye for design and a love for coding,
-                  <strong>I translate complex ideas into smooth, accessible digital
-                      experiences.</strong>
-                  Eager to collaborate and grow, I'm on the lookout for opportunities
-                  to innovate and excel.
-              </p>
-              <!-- mb-5 gives extra margin spacing under lead text -->
-              <p class="lead mb-5">Let's create something amazing together!</p>
-          </div>
+        <div class="col-12 text-center">
+          <h1 class="display-4 my-4">Mei Wong</h1>
+          <!-- mb-5 gives extra margin spacing under subheading -->
+          <h2 class="display-6 mb-5">Software Developer</h2>
+          <p>
+              Hello! I'm Mei, a
+              <strong>passionate and creative Software Developer</strong>
+              dedicated to building engaging, user-friendly websites and
+              applications. With a keen eye for design and a love for coding,
+              <strong>I translate complex ideas into smooth, accessible digital
+                  experiences.</strong>
+              Eager to collaborate and grow, I'm on the lookout for opportunities
+              to innovate and excel.
+          </p>
+          <!-- mb-5 gives extra margin spacing under lead text -->
+          <p class="lead mb-5">Let's create something amazing together!</p>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Subscribe to my newsletter!
+          </button>
+        </div>
       </section>
     </header>
 
@@ -162,11 +166,86 @@
               Whether you're interested in collaboration, have inquiries about my projects, or wish to request a copy of my CV, 
               please don't hesitate to get in touch. I'm always open to discussing new opportunities and how we can work together to create something amazing!</p>
           </div> 
-          <div class="col-12 col-md-10 col-lg-8">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
             <!--Add your form here-->
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </form>
           </div>       
-        </div>     
+        </div>    
       </footer>
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Subcribe</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Join my new letter forthe lastest uppdates on my projects, coding tips, and industry insights delivered straight to your inbox.</p>
+              <!--Form-->
+              <form class="row g-3">
+                <div class="mb-3 col-12 col-lg-6">
+                  <label for="inputName" class="form-label">Name:</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="mb-3 col-12 col-lg-6">
+                  <label for="inputEmail" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+                <div class="col-12 mb-4">
+                  <button type="submit" class="btn btn-primary">
+                      Sign up!
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+         
       <!--Bootstrap JS Sctipt-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
